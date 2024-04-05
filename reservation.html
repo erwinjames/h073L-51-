@@ -1,0 +1,898 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<!--begin::Head-->
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+	</head>
+	<style>
+		.language-select option::before{
+		margin-right: 5px; /* Adjust as needed */
+		content: attr(data-flag);
+		}
+	</style>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-body position-relative app-blank">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::Root-->
+		<div class="d-flex flex-column flex-root" id="kt_app_root">
+			<!--begin::Header Section-->
+			<div class="mb-0" id="home">
+				<!--begin::Wrapper-->
+				<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" >
+					<!--begin::Header-->
+					<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+						<!--begin::Container-->
+						<div class="container">
+							<!--begin::Wrapper-->
+							<div class="d-flex align-items-center justify-content-between">
+								<!--begin::Logo-->
+								<div class="d-flex align-items-center flex-equal">
+									<!--begin::Mobile menu toggle-->
+									<button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
+										<i class="ki-outline ki-abstract-14 fs-2hx"></i>
+									</button>
+									<!--end::Mobile menu toggle-->
+									<!--begin::Logo image-->
+									<a href="landing.html">
+										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-default h-95px h-lg-95px" />
+										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-sticky h-80px h-lg-80px" />
+									</a>
+									<!--end::Logo image-->
+								</div>
+								<!--end::Logo-->
+								<!--begin::Menu wrapper-->
+								<div class="d-lg-block" id="kt_header_nav_wrapper">
+									<div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+										<!--begin::Menu-->
+										<div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-600 menu-state-title-primary nav nav-flush fs-5 fw-semibold" id="kt_landing_menu">
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="landing.html" data-translate="Home">Home</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="https://caea-ph.com/" style="border: 1px dashed #2B4666;" data-translate="CAEA School">CAEA School</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<div class="menu-link nav-link py-3 px-4 px-xxl-6 
+												dropdown">
+												<select id="languageSelect" class="form-select form-select-solid language-select"></select>
+												</div>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+										</div>
+										<!--end::Menu-->
+									</div>
+								</div>
+								<!--end::Menu wrapper-->
+							</div>
+							<!--end::Wrapper-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Header Section-->
+			<!--end::Statistics Section-->
+			<!--begin::Testimonials Section-->
+			<div class="mt-20 mb-n20 position-relative z-index-2">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Row-->
+					<div class="row g-lg-10 mb-10 mb-lg-20">
+                        <div id="kt_app_content" class="app-content flex-column-fluid">
+							<!--begin::Content-->
+								<div id="kt_app_content" class="app-content flex-column-fluid">
+									<!--begin::Card-->
+									<div class="card">
+										<!--begin::Card body-->
+										<div class="card-body">
+											<!--begin::Stepper-->
+											<div class="stepper stepper-links d-flex flex-column pt-15" id="kt_create_account_stepper">
+												<!--begin::Nav-->
+												<div class="stepper-nav mb-5">
+													<!--begin::Step 2-->
+													<div class="stepper-item current" data-kt-stepper-element="nav">
+														<h3 class="stepper-title" data-translate="Account Info">Account Info</h3>
+													</div>
+													<!--end::Step 2-->
+													<!--begin::Step 3-->
+													<div class="stepper-item" data-kt-stepper-element="nav">
+														<h3 class="stepper-title" data-translate="Arrival And Departure Dates">Arrival And Departure Dates</h3>
+													</div>
+													<!--end::Step 3-->
+													<!--begin::Step 4-->
+													<div class="stepper-item" data-kt-stepper-element="nav">
+														<h3 class="stepper-title" data-translate="Credit Card Information">Credit Card Information</h3>
+													</div>
+													<!--end::Step 4-->
+													<!--begin::Step 5-->
+													<div class="stepper-item" data-kt-stepper-element="nav">
+														<h3 class="stepper-title" data-translate="Preferences">Preferences</h3>
+													</div>
+													<!--end::Step 5-->
+												</div>
+												<!--end::Nav-->
+												<!--begin::Form-->
+												<form class="mx-auto mw-600px w-100 pt-15 pb-10" novalidate="novalidate" id="kt_create_account_form">
+													<!--begin::Step 2-->
+													<div class="current" data-kt-stepper-element="content">
+														<!--begin::Wrapper-->
+														<div class="w-100">
+															<!--begin::Heading-->
+															<div class="pb-10 pb-lg-15">
+																<!--begin::Title-->
+																<h2 class="fw-bold text-gray-900" data-translate="Account Info">Account Info</h2>
+																<!--end::Title-->
+																<!--begin::Notice-->
+																<div class="text-muted fw-semibold fs-6"><span data-translate="If you need more info, Please check out">If you need more info, please check out</span>
+																<a href="#" class="link-primary fw-bold" data-translate="Help Page">Help Page</a>.</div>
+																<!--end::Notice-->
+															</div>
+															<!--end::Heading-->
+															<!--begin::Input group-->
+															<div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="Name">Name</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="text" class="form-control form-control-lg form-control-solid" name="account_name" placeholder="" value="" />
+																<!--end::Input-->
+															</div>
+                                                            <div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="Phonetic pronunciation of the name:">Phonetic pronunciation of the name:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="text" class="form-control form-control-lg form-control-solid" name="p_name" placeholder="" value="" />
+																<!--end::Input-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div class="mb-0 fv-row">
+																<!--begin::Label-->
+																<label class="d-flex align-items-center form-label mb-5" data-translate="Select Gender">Select Gender</label>
+																<!--end::Label-->
+																<!--begin::Options-->
+																<div class="mb-0">
+																	<!--begin:Option-->
+																	<label class="d-flex flex-stack mb-5 cursor-pointer">
+																		<!--begin:Label-->
+																		<span class="d-flex align-items-center me-2">
+																			<!--begin::Icon-->
+																			<span class="symbol symbol-50px me-6">
+																				<span class="symbol-label">
+																					<i class="fa fa-female fs-1 text-gray-600"></i>
+																				</span>
+																			</span>
+																			<!--end::Icon-->
+																			<!--begin::Description-->
+																			<span class="d-flex flex-column">
+																				<span class="fw-bold text-gray-800 text-hover-primary fs-5" data-translate="Female">Female</span>
+																			</span>
+																			<!--end:Description-->
+																		</span>
+																		<!--end:Label-->
+																		<!--begin:Input-->
+																		<span class="form-check form-check-custom form-check-solid">
+																			<input class="form-check-input" type="radio" name="gender" value="1" />
+																		</span>
+																		<!--end:Input-->
+																	</label>
+																	<!--end::Option-->
+																	<!--begin:Option-->
+																	<label class="d-flex flex-stack mb-5 cursor-pointer">
+																		<!--begin:Label-->
+																		<span class="d-flex align-items-center me-2">
+																			<!--begin::Icon-->
+																			<span class="symbol symbol-50px me-6">
+																				<span class="symbol-label">
+																					<i class="fa fa-male fs-1 text-gray-600"></i>
+																				</span>
+																			</span>
+																			<!--end::Icon-->
+																			<!--begin::Description-->
+																			<span class="d-flex flex-column">
+																				<span class="fw-bold text-gray-800 text-hover-primary fs-5" data-translate="Male">Male</span>
+																			</span>
+																			<!--end:Description-->
+																		</span>
+																		<!--end:Label-->
+																		<!--begin:Input-->
+																		<span class="form-check form-check-custom form-check-solid">
+																			<input class="form-check-input" type="radio"  name="gender" value="2" />
+																		</span>
+																		<!--end:Input-->
+																	</label>
+																	<!--end::Option-->
+																</div>
+																<!--end::Options-->
+															</div>
+															<!--end::Input group-->
+                                                            <div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="Address:">Address:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="text" class="form-control form-control-lg form-control-solid" name="address" placeholder="" value="" />
+																<!--end::Input-->
+															</div>
+                                                            <div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="Telephone number:">Telephone number:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="tel" class="form-control form-control-lg form-control-solid" name="telnum" placeholder="xxx-xxx-xxxx" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+																<!--end::Input-->
+															</div>
+                                                            <div class="mb-10 fv-row">
+                                                                <!--begin::Label-->
+																<label class="form-label mb-3" data-translate="FAX:">FAX:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="tel" class="form-control form-control-lg form-control-solid" name="faxnum" placeholder="xxx-xxx-xxxx" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+																<!--end::Input-->
+                                                            </div>
+                                                            <div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="E-mail:">E-mail:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="email" class="form-control form-control-lg form-control-solid" name="email" placeholder="" value="" />
+																<!--end::Input-->
+															</div>
+                                                            <div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="form-label mb-3" data-translate="Confirm E-mail:">Confirm E-mail:</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="email" class="form-control form-control-lg form-control-solid" name="cmail" placeholder="" value="" />
+																<!--end::Input-->
+															</div>
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Step 2-->
+													<!--begin::Step 3-->
+													<div data-kt-stepper-element="content">
+														<!--begin::Wrapper-->
+														<div class="w-100">
+															<!--begin::Heading-->
+															<div class="pb-10 pb-lg-12">
+																<!--begin::Title-->
+																<h2 class="fw-bold text-gray-900" data-translate="Please select your preferred accommodation">Please select your preferred accommodation.</h2>
+																<!--end::Title-->
+																<!--begin::Notice-->
+																<div class="text-muted fw-semibold fs-6" data-translate="if you need more info, please contact us">If you need more info, please contact us 
+																<a href="contact_us.html" class="link-primary fw-bold" data-translate="Contact Page">Contact Page</a>.</div>
+																<!--end::Notice-->
+															</div>
+															<!--end::Heading-->
+															<!--begin::Input group-->
+															<div class="fv-row mb-10">
+																<!--begin::Label-->
+																<label class="form-label required" data-translate="Check in / Check out">Check in / Check out</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+                                                                <input class="form-control form-control-solid" id="kt_daterangepicker_2"/>
+																<!--end::Input-->
+															</div>
+															<!--end::Input group-->
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Step 3-->
+													<!--begin::Step 4-->
+													<div data-kt-stepper-element="content">
+														<!--begin::Wrapper-->
+														<div class="w-100">
+															<!--begin::Heading-->
+															<div class="pb-10 pb-lg-15">
+																<!--begin::Title-->
+																<h2 class="fw-bold text-gray-900" data-translate="Billing Details">Billing Details</h2>
+																<!--end::Title-->
+																<!--begin::Notice-->
+																<div class="text-muted fw-semibold fs-6"><span data-translate="If you need more info, please check out">If you need more info, please check out</span>
+																<a href="#" class="text-primary fw-bold" data-translate="Help Page">Help Page</a>.</div>
+																<!--end::Notice-->
+															</div>
+															<!--end::Heading-->
+															<!--begin::Input group-->
+															<div class="d-flex flex-column mb-7 fv-row">
+																<!--begin::Label-->
+																<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+																	<span class="required" data-translate="Name On Card">Name On Card</span>
+																	<span class="ms-1" data-bs-toggle="tooltip" title="Specify a card holder's name">
+																		<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+																	</span>
+																</label>
+																<!--end::Label-->
+																<input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="" />
+															</div>
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div class="d-flex flex-column mb-7 fv-row">
+																<!--begin::Label-->
+																<label class="required fs-6 fw-semibold form-label mb-2" data-translate="Card Number">Card Number</label>
+																<!--end::Label-->
+																<!--begin::Input wrapper-->
+																<div class="position-relative">
+																	<!--begin::Input-->
+																	<input type="text" class="form-control form-control-solid" placeholder="4111 1111 1111 1111" name="card_number" value="" />
+																	<!--end::Input-->
+																	<!--begin::Card logos-->
+																	<div class="position-absolute translate-middle-y top-50 end-0 me-5">
+																		<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
+																		<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
+																		<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
+																	</div>
+																	<!--end::Card logos-->
+																</div>
+																<!--end::Input wrapper-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div class="row mb-10">
+																<!--begin::Col-->
+																<div class="col-md-8 fv-row">
+																	<!--begin::Label-->
+																	<label class="required fs-6 fw-semibold form-label mb-2" data-translate="Expiration Date:">Expiration Date</label>
+																	<!--end::Label-->
+																	<!--begin::Row-->
+																	<div class="row fv-row">
+																		<!--begin::Col-->
+																		<div class="col-6">
+																			<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																				<option></option>
+																				<option value="1">1</option>
+																				<option value="2">2</option>
+																				<option value="3">3</option>
+																				<option value="4">4</option>
+																				<option value="5">5</option>
+																				<option value="6">6</option>
+																				<option value="7">7</option>
+																				<option value="8">8</option>
+																				<option value="9">9</option>
+																				<option value="10">10</option>
+																				<option value="11">11</option>
+																				<option value="12">12</option>
+																			</select>
+																		</div>
+																		<!--end::Col-->
+																		<!--begin::Col-->
+																		<div class="col-6">
+																			<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
+																				<option></option>
+																				<option value="2023">2023</option>
+																				<option value="2024">2024</option>
+																				<option value="2025">2025</option>
+																				<option value="2026">2026</option>
+																				<option value="2027">2027</option>
+																				<option value="2028">2028</option>
+																				<option value="2029">2029</option>
+																				<option value="2030">2030</option>
+																				<option value="2031">2031</option>
+																				<option value="2032">2032</option>
+																				<option value="2033">2033</option>
+																			</select>
+																		</div>
+																		<!--end::Col-->
+																	</div>
+																	<!--end::Row-->
+																</div>
+																<!--end::Col-->
+																<!--begin::Col-->
+																<div class="col-md-4 fv-row">
+																	<!--begin::Label-->
+																	<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+																		<span class="required" data-translate="CVV">CVV</span>
+																		<span class="ms-1" data-bs-toggle="tooltip" title="Enter a card CVV code">
+																			<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+																		</span>
+																	</label>
+																	<!--end::Label-->
+																	<!--begin::Input wrapper-->
+																	<div class="position-relative">
+																		<!--begin::Input-->
+																		<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
+																		<!--end::Input-->
+																		<!--begin::CVV icon-->
+																		<div class="position-absolute translate-middle-y top-50 end-0 me-3">
+																			<i class="ki-outline ki-credit-cart fs-2hx"></i>
+																		</div>
+																		<!--end::CVV icon-->
+																	</div>
+																	<!--end::Input wrapper-->
+																</div>
+																<!--end::Col-->
+															</div>
+															<!--end::Input group-->
+                                                            <!--begin::Notice-->
+											<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed mb-12 p-6">
+												<!--begin::Icon-->
+												<i class="ki-outline ki-information fs-2tx text-warning me-4"></i>
+												<!--end::Icon-->
+												<!--begin::Wrapper-->
+												<div class="d-flex flex-stack flex-grow-1">
+													<!--begin::Content-->
+													<div class="fw-semibold">
+														<h4 class="text-gray-900 fw-bold" data-translate="The information on this credit card is protect by SSL.">The information on this credit card is protected by SSL.</h4>
+														<div class="fs-6 text-gray-700"><span data-translate="If you do not have a credit card or do not have a credit card, we will not be able to guarantee your reservation. Please contact the hotel and transfer the accommodation fee to the following bank, and once this is confirmed, you can confirm your reservation. Thank you.">If you do not have a credit card or do not have a credit card, we will not be able to guarantee your reservation. Please contact the hotel and transfer the accommodation fee to the following bank, and once this is confirmed, you can confirm your reservation. Thank you.</span>
+														<a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card" data-translate="Add Payment Method">Add Payment Method</a>.</div>
+													</div>
+													<!--end::Content-->
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Notice-->
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Step 4-->
+													<!--begin::Step 5-->
+													<div data-kt-stepper-element="content">
+														<!--begin::Wrapper-->
+														<div class="w-100">
+															<!--begin::Heading-->
+															<div class="pb-8 pb-lg-10">
+																<!--begin::Title-->
+																<h2 class="fw-bold text-gray-900" data-translate="Room Preferences">Room Preferences</h2>
+																<!--end::Title-->
+																<!--begin::Notice-->
+																<div class="text-muted fw-semibold fs-6"><span data-translate="If you need more Help, please">If you need more Help, please </span>
+																<a href="#" class="link-primary fw-bold" data-translate="Contact Us!">Contact Us!</a>.</div>
+																<!--end::Notice-->
+															</div>
+															<!--end::Heading-->
+															<!--begin::Body-->
+															<div class="mb-0">
+                                                                <!--begin::Card body-->
+                                                                    <div class="card-body border-top p-9">
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label required fw-semibold fs-6" data-translate="Number of adults (12 years old and over)">Number of adults (12 years old and over):</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <input type="number" name="num_of_adults" class="form-control form-control-lg form-control-solid" placeholder="" value="" />
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label required fw-semibold fs-6" data-translate="Number of childer (11 years old and under)">Number of children (11 years old and under):</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <input type="number" name="num_of_child" class="form-control form-control-lg form-control-solid" placeholder="" value="" />
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label fw-semibold fs-6">
+                                                                                <span class="required" data-translate="Preferred room type:">Preferred room type:</span>
+                                                                                
+                                                                            </label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <select name="country" aria-label="Select a Country" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg fw-semibold">
+                                                                                    <option value="" data-translate="Select a Room Type...">Select a Room Type...</option>
+                                                                                    <option value="Economy Plus" data-translate="Economy Plus">Economy Plus</option>
+                                                                                    <option value="Standard" data-translate="Standard">Standard</option>
+                                                                                    <option value="Deluxe" data-translate="Deluxe">Deluxe</option>
+                                                                                    <option value="Deluxe Plus" data-translate="Deluxe Plus">Deluxe Plus</option>
+                                                                                    <option value="Tatami room" data-translate="Tatami room">Tatami room</option>
+                                                                                    <option value="Superior" data-translate="Superior">Superior</option>
+                                                                                    <option value="Executive" data-translate="Executive">Executive</option>
+                                                                                    <option value="Junior Suite" data-translate="Junior Suite">Junior Suite</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label required fw-semibold fs-6" data-translate="Number of rooms:">Number of rooms:</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <!--begin::Input-->
+                                                                                <select name="num_rooms" aria-label="Select a Number of Rooms" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                    <option value="" data-translate="Select a Number of Rooms...">Select a Number of Rooms...</option>
+                                                                                    <option value="1">1</option>
+                                                                                    <option value="2">2</option>
+                                                                                    <option value="3">3</option>
+                                                                                    <option value="4">4</option>
+                                                                                    <option value="5">5</option>
+                                                                                    <option value="6">6</option>
+                                                                                    <option value="7">7</option>
+                                                                                    <option value="8">8</option>
+                                                                                    <option value="9">9</option>
+                                                                                    <option value="10">10</option>
+                                                                                </select>
+                                                                                <!--end::Input-->
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label required fw-semibold fs-6" data-translate="Number of Guests:">Number of Guests:</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <select name="timezone" aria-label="Select a Timezone" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                    <option value="">Select a Timezone..</option>
+                                                                                    <option data-bs-offset="-39600" value="1">1</option>
+                                                                                    <option data-bs-offset="-39600" value="2">2</option>
+                                                                                    <option data-bs-offset="-39600" value="3">3</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label fw-semibold fs-6" data-translate="Preferred bed type:">Preferred bed type:</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <select name="currnecy" aria-label="Select a Preferred bed type" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                    <option value="" data-translate="Select a Preferred bed type..">Select a Preferred bed type..</option>
+                                                                                    <option value="twin" data-translate="Twin">Twin</option>
+                                                                                    <option value="double" data-translate="Double">Double</option>
+                                                                                    <option value="1 Bed" data-translate="1 Bed">1 Bed</option>
+                                                                                    <option value="2 Beds" data-translate="2 Beds">2 Beds</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label fw-semibold fs-6" data-translate="Number of guests">Number of guests:</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <select name="currnecy" aria-label="Select a Currency" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                    <option value="" data-translate="Select a Number of guests">Select a Number of Guests..</option>
+                                                                                    <option value="1">1</option>
+                                                                                    <option value="2">2</option>
+                                                                                    <option value="3">3</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Label-->
+                                                                            <label class="col-lg-4 col-form-label fw-semibold fs-6" data-translate="Extra Bed:">Extra Bed:</label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                <select name="currnecy" aria-label="Select a Extra Bed" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                    <option value="">Select a Extra Bed..</option>
+                                                                                    <option data-kt-flag="flags/united-states.svg" value="0">0</option>
+                                                                                    <option data-kt-flag="flags/united-states.svg" value="1">1</option>
+                                                                                </select>
+                                                                                
+                                                                            <!--begin::Hint-->
+                                                                                <div class="form-text" data-translate="Only Executive and Junior Suite rooms can accommodate an extra bed.">Only Executive and Junior Suite rooms can accommodate an extra bed.</div>
+                                                                            <!--end::Hint-->    
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="row mb-6">
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-lg-8 fv-row">
+                                                                                    <label for="" class="form-label" data-translate="Flight # / Arrival Time :">Flight # / Arrival Time :</label>
+                                                                                    <!--begin::Hint-->
+                                                                                        <div class="form-text" data-translate="Please indicate here Including FLIGT NO. and ARRIVAL TIME in case of AIRPORT PICK-UP:">Please indicate here including FLIGHT NO. and ARRIVAL TIME in case of AIRPORT PICK-UP:</div>
+                                                                                    <!--end::Hint--> 
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                                    <textarea class="form-control form-control form-control-solid" data-kt-autosize="true"></textarea>
+                                                                              
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                    </div>
+                                                                    <!--end::Card body-->
+																<!--begin::Alert-->
+																<!--begin::Notice-->
+																<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
+																	<!--begin::Icon-->
+																	<i class="ki-outline ki-information fs-2tx text-warning me-4"></i>
+																	<!--end::Icon-->
+																	<!--begin::Wrapper-->
+																	<div class="d-flex flex-stack flex-grow-1">
+																		<!--begin::Content-->
+																		<div class="fw-semibold">
+																			<h4 class="text-gray-900 fw-bold" data-translate="We need your attention!">We need your attention!</h4>
+																			<div class="fs-6 text-gray-700"><span data-translate="Cancellations made 3 days prior to arrival will be charged 50% of the overnight charge, and cancellation made 2 days, 1 day before and the same day will be charged 100%.If the number of days of booking is shortened, it will be considered canceled and a percentage will be charged based on the above rules. ">
+                                                                                Cancellations made 3 days prior to arrival will be charged 50% of the overnight charge, and cancellations made 2 days, 1 day before and the same day will be charged 100%. If the number of days of booking is shortened, it will be considered canceled and a percentage will be charged based on the above rules. 
+                                                                            </span>
+																			<a href="contact_us.html" class="fw-bold" data-translate="Contact Us">Contact Us</a></div>
+																		</div>
+																		<!--end::Content-->
+																	</div>
+																	<!--end::Wrapper-->
+																</div>
+																<!--end::Notice-->
+																<!--end::Alert-->
+															</div>
+															<!--end::Body-->
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Step 5-->
+													<!--begin::Actions-->
+													<div class="d-flex flex-stack pt-15">
+														<!--begin::Wrapper-->
+														<div class="mr-2">
+															<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+															<i class="ki-outline ki-arrow-left fs-4 me-1"></i><span data-translate="Back">Back</span></button>
+														</div>
+														<!--end::Wrapper-->
+														<!--begin::Wrapper-->
+														<div>
+															<button type="button" class="btn btn-lg btn-primary me-3" data-kt-stepper-action="submit">
+																<span class="indicator-label" data-translate="Submit">Submit 
+																<i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i></span>
+																<span class="indicator-progress" data-translate="Please wait">Please wait... 
+																<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+															</button>
+															<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next" data-translate="Continue">Continue 
+															<i class="ki-outline ki-arrow-right fs-4 ms-1 me-0"></i></button>
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Actions-->
+												</form>
+												<!--end::Form-->
+											</div>
+											<!--end::Stepper-->
+										</div>
+										<!--end::Card body-->
+									</div>
+									<!--end::Card-->
+								</div>
+								<!--end::Content-->	
+						</div>
+					</div>
+					<!--end::Row-->
+					<!--begin::Highlight-->
+					<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+						<!--begin::Content-->
+						<div class="my-2 me-5">
+							<!--begin::Title-->
+							<div class="fs-1 fs-lg-2qx fw-bold text-white mb-2"><div data-translate="Please come to Hotel Asia,">Please come to Hotel Asia,</div>
+							<span class="fw-normal" data-translate="if you want to enjoy a pleasant stay in cebu, Philippines">if you want to enjoy a pleasant stay in Cebu,Philippines.</span></div>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="fs-6 fs-lg-5 text-white fw-semibold opacity-75" data-translate="Stay in a first class rooms at very affordable prices!">Stay in a first class rooms at very afforadable prices!</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Content-->
+						<!--begin::Link-->
+						<a href="" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2" data-translate="Make an Enquiry">Make an Enquiry</a>
+						<!--end::Link-->
+					</div>
+					<!--end::Highlight-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Testimonials Section-->
+			<!--begin::Footer Section-->
+			<div class="mb-0">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="landing-dark-bg pt-20">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Row-->
+						<div class="row py-10 py-lg-20">
+							<!--begin::Col-->
+							<div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+								<!--begin::Block-->
+								<div class="rounded landing-dark-border p-9 mb-10">
+									<!--begin::Title-->
+									<h2 class="text-white" data-translate="Need Help?">Need Help?</h2>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<span class="fw-normal fs-4 text-gray-700" data-translate="Email us to">Email us to 
+									<a href="" class="text-white opacity-50 text-hover-primary" data-translate="info@hotelasiacebu.com">info@hotelasiacebu.com</a></span>
+									<!--end::Text-->
+								</div>
+								<!--end::Block-->
+							</div>
+							<!--end::Col-->
+							<!--begin::Col-->
+							<div class="col-lg-6 ps-lg-16">
+								<!--begin::Navs-->
+								<div class="d-flex justify-content-center">
+									<!--begin::Links-->
+									<div class="d-flex fw-semibold flex-column me-20">
+										<!--begin::Subtitle-->
+										<h4 class="fw-bold text-gray-500 mb-6" data-translate="More for Hotel Asia">More for Hotel Asia</h4>
+										<!--end::Subtitle-->
+										<!--begin::Link-->
+										<a href="https://keenthemes.com/faqs" class="text-white opacity-50 text-hover-primary fs-5 mb-6" data-translate="FAQ">FAQ</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://devs.keenthemes.com/" class="text-white opacity-50 text-hover-primary fs-5 mb-6" data-translate="Support">Support</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://keenthemes.com/blog" class="text-white opacity-50 text-hover-primary fs-5" data-translate="Blog">Blog</a>
+										<!--end::Link-->
+									</div>
+									<!--end::Links-->
+									<!--begin::Links-->
+									<div class="d-flex fw-semibold flex-column ms-lg-20">
+										<!--begin::Subtitle-->
+										<h4 class="fw-bold text-gray-500 mb-6" data-translate="Stay Connected">Stay Connected</h4>
+										<!--end::Subtitle-->
+										<!--begin::Link-->
+										<a href="https://www.facebook.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6" data-translate="Facebook">Facebook</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://twitter.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6" data-translate="Twitter">Twitter</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://www.instagram.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6" data-translate="Instagram">Instagram</span>
+										</a>
+										<!--end::Link-->
+									</div>
+									<!--end::Links-->
+								</div>
+								<!--end::Navs-->
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Row-->
+					</div>
+					<!--end::Container-->
+					<!--begin::Separator-->
+					<div class="landing-dark-separator"></div>
+					<!--end::Separator-->
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Wrapper-->
+						<div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+							<!--begin::Copyright-->
+							<div class="d-flex align-items-center order-2 order-md-1">
+								<!--begin::Logo-->
+								<a href="landing.html">
+									<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="h-95px h-md-90px" />
+								</a>
+								<!--end::Logo image-->
+								<!--begin::Logo image-->
+								<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://hotelasiacebu.com" data-translate="2024 Asia Hotel Cebu">&copy; 2024 Asia Hotel Cebu.</span>
+								<!--end::Logo image-->
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
+								<li class="menu-item">
+									<a href="" target="_blank" class="menu-link px-2" data-translate="About">About</a>
+								</li>
+								<li class="menu-item mx-5">
+									<a href="" target="_blank" class="menu-link px-2" data-translate="Support">Support</a>
+								</li>
+								<li class="menu-item">
+									<a href="" target="_blank" class="menu-link px-2" data-translate="Enquiry">Enquiry</a>
+								</li>
+							</ul>
+							<!--end::Menu-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Footer Section-->
+			<!--begin::Scrolltop-->
+			<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+				<i class="ki-outline ki-arrow-up"></i>
+			</div>
+			<!--end::Scrolltop-->
+		</div>
+		<!--end::Root-->
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<i class="ki-outline ki-arrow-up"></i>
+		</div>
+		<!--end::Scrolltop-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Vendors Javascript(used for this page only)-->
+		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+        <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/custom/landing.js"></script>
+		<script src="assets/js/custom/pages/pricing/general.js"></script>
+		<script src="assets/js/custom/googleT/translate.js"></script>
+        <script src="assets/js/custom/utilities/modals/create-account.js"></script>
+		<script src="assets/js/widgets.bundle.js"></script>
+		<script src="assets/js/custom/widgets.js"></script>
+		<script src="assets/js/custom/apps/chat/chat.js"></script>
+		<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+		<script src="assets/js/custom/utilities/modals/new-target.js"></script>
+		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+        <script>
+            $("#kt_daterangepicker_2").daterangepicker({
+                timePicker: true,
+                startDate: moment().startOf("hour"),
+                endDate: moment().startOf("hour").add(32, "hour"),
+                locale: {
+                    format: "M/DD hh:mm A"
+                }   
+            });
+        </script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+</html>
