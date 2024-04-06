@@ -51,8 +51,8 @@
 									<!--end::Mobile menu toggle-->
 									<!--begin::Logo image-->
 									<a href="landing.html">
-										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-default h-95px h-lg-95px" />
-										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-sticky h-80px h-lg-80px" />
+										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-default h-70px h-lg-70px" />
+										<img alt="Logo" src="src/media/png/LogoNoBgd-1-160x160.png" class="logo-sticky h-60px h-lg-60px" />
 									</a>
 									<!--end::Logo image-->
 								</div>
@@ -446,7 +446,7 @@
 													<div class="fw-semibold">
 														<h4 class="text-gray-900 fw-bold" data-translate="The information on this credit card is protect by SSL.">The information on this credit card is protected by SSL.</h4>
 														<div class="fs-6 text-gray-700"><span data-translate="If you do not have a credit card or do not have a credit card, we will not be able to guarantee your reservation. Please contact the hotel and transfer the accommodation fee to the following bank, and once this is confirmed, you can confirm your reservation. Thank you.">If you do not have a credit card or do not have a credit card, we will not be able to guarantee your reservation. Please contact the hotel and transfer the accommodation fee to the following bank, and once this is confirmed, you can confirm your reservation. Thank you.</span>
-														<a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card" data-translate="Add Payment Method">Add Payment Method</a>.</div>
+														<a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card"></a>.</div>
 													</div>
 													<!--end::Content-->
 												</div>
@@ -510,7 +510,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select name="country" aria-label="Select a Country" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg fw-semibold">
+                                                                                <select id="roomType" name="country" aria-label="Select a Room Type .. " data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg fw-semibold">
                                                                                     <option value="" data-translate="Select a Room Type...">Select a Room Type...</option>
                                                                                     <option value="Economy Plus" data-translate="Economy Plus">Economy Plus</option>
                                                                                     <option value="Standard" data-translate="Standard">Standard</option>
@@ -604,7 +604,7 @@
                                                                         </div>
                                                                         <!--end::Input group-->
                                                                         <!--begin::Input group-->
-                                                                        <div class="row mb-6">
+                                                                        <div class="row mb-6" id="extraBedRow" style="display: none;">
                                                                             <!--begin::Label-->
                                                                             <label class="col-lg-4 col-form-label fw-semibold fs-6" data-translate="Extra Bed:">Extra Bed:</label>
                                                                             <!--end::Label-->
@@ -882,6 +882,7 @@
 		<script src="assets/js/custom/utilities/modals/new-target.js"></script>
 		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
         <script>
+			$(document).ready(function() {
             $("#kt_daterangepicker_2").daterangepicker({
                 timePicker: true,
                 startDate: moment().startOf("hour"),
@@ -890,7 +891,28 @@
                     format: "M/DD hh:mm A"
                 }   
             });
+		});
         </script>
+		<script>
+        $(document).ready(function() {
+            // Get references to the select elements
+            const roomTypeSelect = $('#roomType');
+            const extraBedRow = $('#extraBedRow');
+
+            // Add event listener to the room type select element
+            roomTypeSelect.change(function() {
+                // Check if the selected room type is Executive or Junior Suite
+                const selectedRoomType = roomTypeSelect.val();
+                if (selectedRoomType === 'Executive' || selectedRoomType === 'Junior Suite') {
+                    // Show the extra bed select element
+                    extraBedRow.show();
+                } else {
+                    // Hide the extra bed select element
+                    extraBedRow.hide();
+                }
+            });
+        });
+    </script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
