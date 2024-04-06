@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-require 'openpgp-php/lib/openpgp.php';
+require 'lib/openpgp.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
