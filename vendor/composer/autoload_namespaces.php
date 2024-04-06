@@ -6,4 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'eXorus\\PhpMimeMailParser\\' => array($vendorDir . '/php-mime-mail-parser/php-mime-mail-parser/src'),
 );
