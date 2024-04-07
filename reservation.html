@@ -302,7 +302,7 @@
 																<label class="form-label required" data-translate="Check in / Check out">Check in / Check out</label>
 																<!--end::Label-->
 																<!--begin::Input-->
-                                                                <input class="form-control form-control-solid" id="kt_daterangepicker_2"/>
+                                                                <input name="CheckInOut" class="form-control form-control-solid" id="kt_daterangepicker_2"/>
 																<!--end::Input-->
 															</div>
 															<!--end::Input group-->
@@ -510,7 +510,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select id="roomType" name="country" aria-label="Select a Room Type .. " data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg fw-semibold">
+                                                                                <select id="roomType" name="roomType" aria-label="Select a Room Type .. " data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg fw-semibold">
                                                                                     <option value="" data-translate="Select a Room Type...">Select a Room Type...</option>
                                                                                     <option value="Economy Plus" data-translate="Economy Plus">Economy Plus</option>
                                                                                     <option value="Standard" data-translate="Standard">Standard</option>
@@ -558,7 +558,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select name="timezone" aria-label="Select a Timezone" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                <select name="numOfguest" aria-label="Select a Timezone" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
                                                                                     <option value="">Select a Timezone..</option>
                                                                                     <option data-bs-offset="-39600" value="1">1</option>
                                                                                     <option data-bs-offset="-39600" value="2">2</option>
@@ -575,7 +575,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select name="currnecy" aria-label="Select a Preferred bed type" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                <select name="preBedType" aria-label="Select a Preferred bed type" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
                                                                                     <option value="" data-translate="Select a Preferred bed type..">Select a Preferred bed type..</option>
                                                                                     <option value="twin" data-translate="Twin">Twin</option>
                                                                                     <option value="double" data-translate="Double">Double</option>
@@ -593,7 +593,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select name="currnecy" aria-label="Select a Currency" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                <select name="numOfguest" aria-label="Select a Currency" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
                                                                                     <option value="" data-translate="Select a Number of guests">Select a Number of Guests..</option>
                                                                                     <option value="1">1</option>
                                                                                     <option value="2">2</option>
@@ -610,7 +610,7 @@
                                                                             <!--end::Label-->
                                                                             <!--begin::Col-->
                                                                             <div class="col-lg-8 fv-row">
-                                                                                <select name="currnecy" aria-label="Select a Extra Bed" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
+                                                                                <select name="extrabed" aria-label="Select a Extra Bed" data-control="select2" data-placeholder="" class="form-select form-select-solid form-select-lg">
                                                                                     <option value="">Select a Extra Bed..</option>
                                                                                     <option data-kt-flag="flags/united-states.svg" value="0">0</option>
                                                                                     <option data-kt-flag="flags/united-states.svg" value="1">1</option>
@@ -633,7 +633,7 @@
                                                                                     <!--end::Hint--> 
                                                                             </div>
                                                                             <!--end::Col-->
-                                                                                    <textarea class="form-control form-control form-control-solid" data-kt-autosize="true"></textarea>
+                                                                                    <textarea name="flightAndArrival" class="form-control form-control form-control-solid" data-kt-autosize="true"></textarea>
                                                                               
                                                                         </div>
                                                                         <!--end::Input group-->
